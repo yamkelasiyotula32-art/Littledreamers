@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#7867a8">
+<title>Little Dreamers | Preschool Storybooks</title>
+<style>
+:root{--ink:#39435b;--purple:#7867a8;--pink:#f8dce5;--cream:#fffaf1;--lav:#e9e3ff;--gold:#f5c96a;--mint:#dff2e8;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:"Trebuchet MS",Arial,sans-serif}
+header{position:sticky;top:0;z-index:5;background:#fff;box-shadow:0 2px 14px #39435b12;padding:13px 5%;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{font-size:1.25rem;font-weight:900;color:var(--purple)}nav{display:flex;gap:14px;flex-wrap:wrap}nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:.9rem}
+.hero{padding:42px 6%;background:linear-gradient(120deg,var(--pink),var(--lav));display:grid;grid-template-columns:1.1fr .9fr;gap:25px;align-items:center}
+.kicker{text-transform:uppercase;letter-spacing:2px;font-size:.75rem;font-weight:900;color:#8a6d9f}
+h1{font-size:clamp(2.5rem,7vw,4.4rem);line-height:1.02;margin:10px 0;color:#51466f}.hero p{font-size:1.1rem;line-height:1.6;max-width:540px}
+.hero-art{min-height:220px;border-radius:45%;background:#ffffffa8;display:grid;place-items:center;font-size:clamp(6rem,18vw,11rem)}
+.btn,button{border:0;border-radius:25px;padding:12px 18px;background:var(--purple);color:white;font-weight:800;cursor:pointer;font-size:.95rem;text-decoration:none;display:inline-block}
+button.secondary{background:#fff;color:#51466f;border:2px solid #ddd4f4}button:focus,a:focus,input:focus{outline:3px solid var(--gold);outline-offset:2px}
+section{padding:38px 6%}.section-title{text-align:center;color:#51466f;margin:0 0 8px;font-size:1.9rem}.intro{text-align:center;max-width:650px;margin:0 auto 24px;line-height:1.6}
+.tools{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:20px auto}.tools input{border:2px solid #ddd4f4;border-radius:25px;padding:12px 16px;font:inherit;min-width:min(280px,90vw)}
+.filters{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:15px 0 25px}.filters button{background:#fff;color:#51466f;border:2px solid #e5def3}.filters button.active{background:var(--purple);color:#fff}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1100px;margin:auto}
+.card{background:#fff;border-radius:22px;padding:18px;box-shadow:0 8px 25px #39435b0d;display:flex;flex-direction:column}
+.art{height:140px;border-radius:17px;display:grid;place-items:center;font-size:5rem;margin-bottom:14px}
+.card h3{margin:4px 0;color:#51466f}.card p{line-height:1.5;flex:1}.tag{font-size:.78rem;font-weight:800;color:#7867a8}
+.reader{max-width:850px;margin:auto;background:var(--mint);border-radius:26px;padding:24px}
+.reader-top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
+.reader h3{text-align:center;font-size:1.7rem;color:#426b62;margin:10px}
+.book-picture{text-align:center;font-size:5rem;margin:12px}
+.story-text{font-size:1.2rem;line-height:1.9;white-space:pre-line;background:#ffffffa8;padding:20px;border-radius:18px}
+.controls{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+.progress{height:9px;background:#ffffff;border-radius:9px;overflow:hidden;margin:15px 0}.progress span{display:block;height:100%;background:#79a995;width:0}
+.learning{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;max-width:1000px;margin:auto}
+.learn-card{background:#fff;border-radius:20px;padding:20px;text-align:center}.learn-card .emoji{font-size:3.4rem}
+.quiz{max-width:700px;margin:auto;background:#fff;border-radius:22px;padding:22px;text-align:center}.quiz h3{color:#51466f}.quiz-options{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.feedback{min-height:28px;font-weight:800;color:#426b62}
+.note{max-width:850px;margin:20px auto 0;background:#fff;padding:18px;border-left:5px solid var(--gold);border-radius:12px;line-height:1.6}
+footer{text-align:center;background:#51466f;color:#fff;padding:25px;line-height:1.7}
+@media(max-width:760px){.hero{grid-template-columns:1fr;text-align:center}.hero p{margin:auto}.hero-art{min-height:150px}.cards{grid-template-columns:1fr 1fr}.learning{grid-template-columns:1fr}.story-text{font-size:1.08rem}header{justify-content:center}}
+@media(max-width:480px){.cards{grid-template-columns:1fr}.card .art{height:120px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">☁️ Little Dreamers</div>
+  <nav><a href="#books">Books</a><a href="#learn">Learn</a><a href="#quiz">Play</a><a href="#grownups">Parents</a></nav>
+</header>
+<main>
+<div class="hero">
+ <div><div class="kicker">Tiny tales · Big dreams</div><h1>Little books.<br>Big imaginations!</h1>
+ <p>Welcome to a happy storytime world full of friendly animals, magical adventures and fun learning for little learners.</p>
+ <a class="btn" href="#books">Explore storybooks</a></div>
+ <div class="hero-art" aria-label="Moon, stars and teddy bear">🧸🌙</div>
+</div>
+
+<section id="books">
+ <h2 class="section-title">Choose a little adventure 📚</h2>
+ <p class="intro">Pick a story, get comfy and let your imagination grow. Grown-ups can read along or use the read-aloud button.</p>
+ <div class="tools"><input id="search" type="search" placeholder="🔎 Search stories..." aria-label="Search stories"></div>
+ <div class="filters" id="filters">
+  <button class="active" data-filter="All">All stories</button><button data-filter="Animals">Animals</button><button data-filter="Bedtime">Bedtime</button><button data-filter="Learning">Learning</button>
+ </div>
+ <div class="cards" id="bookCards"></div>
+</section>
+
+<section id="reader-section">
+ <h2 class="section-title">Storytime corner ✨</h2>
+ <p class="intro">Read one page at a time. You can make the words bigger or listen to the story.</p>
+ <div class="reader">
+  <div class="reader-top"><span class="tag" id="storyCategory">BEDTIME STORY</span><span class="tag" id="readCount">Stories read: 0</span></div>
+  <div class="book-picture" id="storyEmoji">🐻</div>
+  <h3 id="storyTitle">Benji's Big Goodnight</h3>
+  <div class="progress"><span id="progressBar"></span></div>
+  <p class="story-text" id="storyText">The sun was setting behind the tall green trees...</p>
+  <div class="controls">
+   <button class="secondary" onclick="changeSize(-1)">A− Smaller</button><button class="secondary" onclick="changeSize(1)">A+ Bigger</button>
+   <button onclick="readAloud()">🔊 Read aloud</button><button class="secondary" onclick="stopReading()">Stop</button>
+  </div>
+  <div class="controls"><button class="secondary" onclick="previousPage()">← Previous</button><button onclick="nextPage()">Next page →</button></div>
+ </div>
+</section>
+
+<section id="learn">
+ <h2 class="section-title">Let's learn together 🌈</h2><p class="intro">Little learning moments make big discoveries.</p>
+ <div class="learning">
+  <div class="learn-card"><div class="emoji">🔤</div><h3>ABC time</h3><p>A is for Apple 🍎<br>B is for Ball ⚽<br>C is for Cat 🐱</p></div>
+  <div class="learn-card"><div class="emoji">🔢</div><h3>Count with me</h3><p>1 ⭐ &nbsp; 2 ⭐⭐ &nbsp; 3 ⭐⭐⭐</p><p>Can you count to three?</p></div>
+  <div class="learn-card"><div class="emoji">🎨</div><h3>Colours</h3><p>❤️ Red<br>💛 Yellow<br>💙 Blue<br>💚 Green</p></div>
+ </div>
+</section>
+
+<section id="quiz">
+ <h2 class="section-title">Little learner quiz 🐾</h2><p class="intro">Choose the right answer. Learning is fun!</p>
+ <div class="quiz"><h3 id="question">Which animal says “Moo”?</h3><div class="quiz-options" id="answers"></div><p class="feedback" id="feedback" aria-live="polite"></p><button class="secondary" onclick="nextQuestion()">Next question</button></div>
+</section>
+
+<section id="grownups">
+ <h2 class="section-title">A little note for grown-ups 💛</h2>
+ <div class="note"><strong>Storytime tips:</strong> Read slowly, point to pictures, ask your child what they think happens next and celebrate every answer. This app is designed as a simple reading companion for preschool children. An adult should help younger children use the app.</div>
+ <div class="note"><strong>For the grown-ups:</strong> This starter version works in your browser and remembers story-reading progress on this device. It does not collect children's names or personal details. Online payments, subscriptions and advertising are not activated yet and need secure provider accounts and setup before launch.</div>
+</section>
+</main>
+<footer>Made with love for little dreamers ☁️<br><small>Read a story · Learn something new · Dream big</small></footer>
+
+<script>
+const books=[
+ {title:"Benji's Big Goodnight",emoji:"🐻",category:"Bedtime",desc:"A sleepy bear says goodnight to all his forest friends.",pages:["The sun was setting behind the tall green trees. Benji Bear rubbed his sleepy eyes and gave a tiny yawn. “It is nearly bedtime,” he whispered.","“Goodnight, Bunny. Goodnight, Fox. Goodnight, little birds,” Benji said as he waved to all his friends.","At last, Benji snuggled into his soft bed and hugged his teddy. The moon smiled down. “Sweet dreams, Benji.” The end. 🌙"],color:"#fce8d8"},
+ {title:"The Little Star's Wish",emoji:"⭐",category:"Bedtime",desc:"A tiny star discovers that a little light can make a big difference.",pages:["High above a sleepy town lived a little star named Pip. Pip wished he could shine as brightly as the biggest stars.","One cloudy night, a child looked up and felt afraid of the dark. Pip took a deep breath and gave the tiniest twinkle.","“I can see you!” the child whispered with a smile. Pip learned that even a little light can brighten someone's night. The end. ✨"],color:"#e9e3ff"},
+ {title:"Rosie's Garden Surprise",emoji:"🐰",category:"Animals",desc:"A curious bunny grows a beautiful flower and makes a new friend.",pages:["Rosie Rabbit loved hopping through her garden. One morning, she found a tiny seed beside her watering can.","She planted it, gave it water and waited patiently. Day after day, a little green shoot grew taller and taller.","At last, a bright flower opened, and a butterfly came to visit. Rosie smiled. Good things grow when we care for them. The end. 🌼"],color:"#dff2e8"},
+ {title:"Milo Learns His Colours",emoji:"🦁",category:"Learning",desc:"Join Milo the lion as he spots colours all around him.",pages:["Milo the little lion went outside to play. “What a lovely day!” he said. He saw a RED apple on the grass.","Then Milo spotted a YELLOW sun and a BLUE bird in the sky. “I know these colours!” he cheered.","Beside a tree was a GREEN leaf. Milo smiled. Red, yellow, blue and green. The world is full of colour! The end. 🎨"],color:"#fff0c9"},
+ {title:"Daisy Duck's Splashy Day",emoji:"🦆",category:"Animals",desc:"Daisy and her friends discover the joy of sharing.",pages:["Daisy Duck loved splashing in the pond. “Come and play!” she called to her friends.","A little frog hopped over. Two ducklings paddled near. Daisy made room for everyone.","They splashed, laughed and shared the sunshine. Playing together made the day extra special. The end. 💦"],color:"#dff2e8"},
+ {title:"The Kind Little Elephant",emoji:"🐘",category:"Animals",desc:"Ellie learns that small acts of kindness matter.",pages:["Ellie Elephant was walking through the forest when she saw a little bird looking sad.","“Can I help?” asked Ellie. The bird had dropped a twig for its nest. Ellie gently picked it up with her trunk.","“Thank you!” chirped the bird. Ellie felt happy. Being kind is a wonderful thing. The end. 💜"],color:"#e9e3ff"}
+];
+let current=0,page=0,fontSize=19,filter="All";
+let completed=JSON.parse(localStorage.getItem("ld_read")||"[]");
+function renderCards(){
+ const q=document.getElementById("search").value.toLowerCase();
+ const shown=books.map((b,i)=>({...b,i})).filter(b=>(filter==="All"||b.category===filter)&&(b.title+" "+b.desc).toLowerCase().includes(q));
+ document.getElementById("bookCards").innerHTML=shown.map(b=>`<article class="card"><div class="art" style="background:${b.color}">${b.emoji}</div><span class="tag">${b.category.toUpperCase()}</span><h3>${b.title}</h3><p>${b.desc}</p><button onclick="openBook(${b.i})">Read this book</button></article>`).join("")||"<p>No stories found. Try another search.</p>";
+}
+function openBook(i){current=i;page=0;showPage();document.getElementById("reader-section").scrollIntoView({behavior:"smooth"});}
+function showPage(){const b=books[current];document.getElementById("storyEmoji").textContent=b.emoji;document.getElementById("storyTitle").textContent=b.title;document.getElementById("storyCategory").textContent=b.category+" STORY";document.getElementById("storyText").textContent=b.pages[page];document.getElementById("storyText").style.fontSize=fontSize+"px";document.getElementById("progressBar").style.width=((page+1)/b.pages.length*100)+"%";document.getElementById("readCount").textContent="Stories read: "+completed.length;}
+function nextPage(){if(page<books[current].pages.length-1){page++;showPage();}else{if(!completed.includes(current)){completed.push(current);localStorage.setItem("ld_read",JSON.stringify(completed));}document.getElementById("readCount").textContent="Stories read: "+completed.length;document.getElementById("storyText").textContent="The End! 🌟 Well done, little reader! Choose another story when you're ready.";document.getElementById("progressBar").style.width="100%";}}
+function previousPage(){if(page>0){page--;showPage();}}
+function changeSize(n){fontSize=Math.max(15,Math.min(30,fontSize+n*2));document.getElementById("storyText").style.fontSize=fontSize+"px";}
+function readAloud(){if(!("speechSynthesis" in window)){alert("Read aloud is not supported in this browser.");return;}speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(books[current].pages[page]);u.lang="en-ZA";u.rate=.85;speechSynthesis.speak(u);}
+function stopReading(){if("speechSynthesis" in window)speechSynthesis.cancel();}
+document.getElementById("search").addEventListener("input",renderCards);
+document.querySelectorAll("#filters button").forEach(btn=>btn.addEventListener("click",()=>{filter=btn.dataset.filter;document.querySelectorAll("#filters button").forEach(x=>x.classList.toggle("active",x===btn));renderCards();}));
+const quiz=[{q:'Which animal says “Moo”?',a:["Cow","Duck","Cat"],correct:"Cow"},{q:"What colour is a banana?",a:["Blue","Yellow","Purple"],correct:"Yellow"},{q:"How many stars are here? ⭐⭐",a:["One","Two","Five"],correct:"Two"},{q:"Which animal has a long trunk?",a:["Rabbit","Elephant","Frog"],correct:"Elephant"}];let qi=0;
+function showQuestion(){let x=quiz[qi];document.getElementById("question").textContent=x.q;document.getElementById("feedback").textContent="";document.getElementById("answers").innerHTML=x.a.map(a=>`<button class="secondary" onclick="answer('${a}')">${a}</button>`).join("");}
+function answer(a){document.getElementById("feedback").textContent=a===quiz[qi].correct?"Wonderful! That's right! 🌟":"Good try! Have another go. 💛";}
+function nextQuestion(){qi=(qi+1)%quiz.length;showQuestion();}
+renderCards();showPage();showQuestion();
+</script>
+</body>
+</html>
